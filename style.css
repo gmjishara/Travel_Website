@@ -115,8 +115,19 @@ section {
   transition: ease 0.4s;
 }
 
-
 .home-btn:hover{
     background:#ff8000 ;
     transform: scale(1.1);
 }
+
+header.sticky{
+  background-color: var(--bg-color);
+  box-shadow:rgba(35, 33, 38, 0.1) 0px 10px 10px -10px;
+  padding: 10px 18%;
+}
+
+.sticky .logo,.sticky .navbar a{
+  color:var(--text-color);
+}
+
+
