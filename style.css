@@ -57,7 +57,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: var(--text-color);
+  background-color: #ff8000;
   font-size: var(--p-font);
   box-shadow: 5px 10px 30px rgb(85 85 85/20%);
   border-radius: 4px;
@@ -186,8 +186,31 @@ header.sticky{
   border: 1px solid transparent;
 }
 
+.title{
+  text-align: center;
+}
+
+.title h2{
+  font-size: var(--h2-font);
+  line-height: 1.2;
+}
+
+.package-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+  gap:1rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.thum{
+  position: relative;
+  transition: all .3s cubic-bezier(.445,.15,.55,.45);
+  cursor: pointer;
+}
+
 .thum img{
-  width:380px;
-  height: 370px;
+  width:100%;
+  height: auto;
   border-radius: 20px;
 }
