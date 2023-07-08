@@ -258,8 +258,10 @@ header.sticky{
   height: 500px;
   border-radius: 20px;
   object-fit: cover;
-  filter: brightness(85%);
+  filter: brightness(80%);
   will-change: filter;
+  transition: all .3s cubic-bezier(0.445,0.05,0.55,0.95) ;
+  cursor: pointer;
 }
 
 .destination-content{
@@ -272,4 +274,27 @@ header.sticky{
 
 .col-content{
   position: relative;
+}
+
+.col-content h5{
+  position: absolute;
+  left: 15px;
+  bottom: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--bg-color);
+}
+
+.col-content p{
+  position: absolute;
+  left: 15px;
+  bottom: 35px;
+  font-size: 16px;
+  color: var(--bg-color);
+}
+
+
+.col-content img:hover{
+  filter: brightness(100%) hue-rotate(30deg);
+  transform: scale(1.04);
 }
