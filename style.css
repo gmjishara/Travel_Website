@@ -303,48 +303,48 @@ header.sticky {
   transform: scale(1.04);
 }
 
-.Newsletter{
+.Newsletter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.newsletter-content h1{
+.newsletter-content h1 {
   font-size: var(--h2-font);
   line-height: 1.2;
 }
 
-.newsletter-content p{
+.newsletter-content p {
   color: var(--second-color);
   margin-top: 10px;
 }
 
-form{
+form {
   max-width: 100%;
   width: 450px;
   position: relative;
 }
 
-form input:first-child{
+form input:first-child {
   width: 100%;
   border: none;
+  outline: none;
   border-radius: 10px;
   box-shadow: 5px 10px 20px rgba(85, 85, 85, 0.2);
   padding: 20px 150px 20px 30px;
 }
 
-form input:last-child{
-  display: inline-block;
+form input:last-child {
   position: absolute;
   outline: none;
   border: none;
   padding: 14px 30px;
-  border-radius: 10px;
+  border-radius: 16px;
   background-color: var(--main-color);
   color: var(--bg-color);
   right: 10px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
 }
