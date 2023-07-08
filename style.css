@@ -255,5 +255,21 @@ header.sticky{
 
 .col-content img{
   width:100%;
-  height: auto;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(85%);
+  will-change: filter;
+}
+
+.destination-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+  gap:2rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.col-content{
+  position: relative;
 }
