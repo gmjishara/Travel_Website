@@ -63,7 +63,7 @@ header {
   border-radius: 4px;
 }
 
-.menu-icon {
+#menu-icon {
   color: var(--bg-color);
   font-size: 35px;
   z-index: 10001;
@@ -395,4 +395,45 @@ form input:last-child {
 
 .social a:hover{
   transform: scale(1.08);
+}
+
+@media(max-width:768px){
+  header{
+    padding: 17px 3%;
+    transition: .2s;
+  }
+
+  header.sticky{
+    padding: 10px 3%;
+    transition: .2s;
+  }
+
+  section{
+    padding: 80px 3%;
+  }
+
+  .home-text p {
+    color: #ffffffbe;
+  }
+
+  :root {
+    --big-font: 4.5rem;
+    --h2-font: 1.3rem;
+    --p-font: 1rem;
+    transition: .2s;
+  }
+
+  #menu-icon{
+    display: block;
+    color: var(--bg-color);
+  }
+  
+  .sticky #menu-icon{
+    display: block;
+    color: black;
+  }
+}
+
+@media (max-width:425px){
+
 }
